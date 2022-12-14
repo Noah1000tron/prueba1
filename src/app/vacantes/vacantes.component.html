@@ -1,0 +1,51 @@
+
+<div>
+    <table>
+        <tr id="b">
+            <td>Identificador</td>
+            <td>Fecha de ingreso</td>
+            <td>Empresa</td>
+            <td>Giro de la empresa</td>
+            <td>Puesto</td>
+            <td>Experiencia requerida</td>
+
+            <td>Forma de trabajar</td>
+            <td>Sueldo</td>
+            <td>Subir curriculum</td>
+            
+
+
+
+
+        </tr>
+        
+        <tr *ngFor="let i of array" class="2" id="a">
+            <td id="w">{{i.identificador}}</td>
+            <td id="w">{{i.fechaRegistro}}</td>
+            <td id="w">{{i.empresa}}</td>
+            <td id="w">{{i.giroEmpresa}}</td>
+            <td id="w">{{i.puesto}}</td>
+            <td id="w">{{i.experiencia}}</td>
+            <td id="w">{{i.formaTrabajar}}</td>
+            <td id="w">{{i.sueldo}}</td>
+            <td>
+                <div class="custom-file">
+                    <br>
+                    <h5>Subir curriculim</h5>
+                    <form action="/api/upload" method="post" enctype="multipart/form-data">
+                        <input type="file" class="custom-file-input" id="input-custom-file" (change)="onFileChange($event)">
+                        <!-- <label class="custom-file-label" for="input-custom-file">Elige un archivo</label> -->
+                    </form>
+                </div>
+                <div class="input-group-prepend">
+                    <!-- <span id="btnUpload" class="input-group-text upload" (click)="onUpload()">
+                        Subir
+                    </span> -->
+                    <button class="input-group-text upload" (click)="onUpload()">Subir</button>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    
+</div>
