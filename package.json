@@ -18,7 +18,7 @@
     "@angular/google-maps": "^15.0.2",
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
-    "@angular/pwa": "^0.5.3",
+    "@angular/pwa": "^0.5.13",
     "@angular/router": "^14.0.0",
     "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.2.0",
